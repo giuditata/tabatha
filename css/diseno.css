@@ -1,0 +1,379 @@
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  font-family: "Sour Gummy", sans-serif; */
+/* Propiedad::valor*/
+/* ETIQUETAS H1 */
+h1{
+    color: #970e43;
+    text-align: center;
+    font-size: 3rem;
+    font-family:"Sour Gummy", sans-serif;
+    border-top: solid salmon 5px;
+    border-bottom: solid salmon 5px;
+    
+}
+
+/* ETIQUETAS H2 */
+h2{color: rgb(226, 43, 195);}
+p{color: rgb(163, 18, 98);}
+html{font-family: Arial, Helvetica, sans-serif;}
+.texto-color{color: rgb(255, 0, 119);
+font-family: "Sour Gummy", sans-serif;
+}
+
+/*se trabaja con CLASES */
+.texto-color1{color: rgb(255, 0, 119);
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 3rem;
+text-align: center;
+background-color: rgba(238, 65, 117, 0.178);
+width: 100%;
+height: 70px;}
+
+
+
+/* LOGO */
+/* se trabaja con ESPECIFICIDAD */
+header img{width: 20%;}
+
+/* BANNER */
+ 
+    .fondo-inicio{background-image: url(../medios/amarillas-flores.jpg);}
+
+
+/* TODO EL HEADER */
+header{background-color: rgba(235, 109, 182, 0.445);
+height: 25%;}
+/* li de nav a   */
+nav a{color: rgb(230, 7, 181)  ;
+font-size: 1.5rem;
+font-style: italic;
+}
+
+/* HEADER UL */
+header ul{display: flex;
+justify-content: space-around;
+width: 70%;
+}
+
+/*EFECTOS EN IMAGENES*/
+img{box-shadow: 32px 16px 59px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 32px 16px 59px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 32px 16px 59px 0px rgba(0,0,0,0.75);
+}
+
+
+.imagenhtml{display: flex;
+flex-direction:column;
+justify-content:right;
+width: 100%;
+justify-content: space-around;
+align-items: center;}
+
+
+
+
+
+/*PERFUMES GRID*/
+.contenedorGrid img{
+    width:50%;
+    height: 100%;
+}
+
+.contenedorGrid{
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "imagen1 texto1 texto1"
+    "texto2 texto2 imagen2";
+
+ /*Cantidad y ancho de cada columna*/
+ grid-template-columns: 30% 20% 30%;
+ 
+    /*Cantidad y alto de cada fila*/
+ grid-template-rows: 150px 300px 200px;
+
+align-items: center;
+justify-content: center;}
+
+ .titulo-grid{
+    grid-area: titulo;}
+    
+ .imagen1-grid{
+    grid-area: imagen1;}
+
+ .texto1-grid{
+ grid-area: texto1; }
+
+ .texto2-grid{
+ grid-area: texto2;}
+
+ .imagen2-grid{
+    grid-area: imagen2;}
+
+
+
+
+
+main{text-align: center;}
+
+
+footer{
+    border: solid salmon 10px;
+    padding: 20px 20px;
+    margin: 20px 100px;}
+
+/*RESPONSIVE PERFUMES*/
+/*mobile*/
+@media (max-width:480px){
+
+    .imagFlex{
+        flex-direction: row;}
+
+.contenedorGrid{
+    grid-template-areas:
+    "titulo"
+    "imagen1"
+    "texto1"
+    "imagen2"
+    "texto2";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+
+
+}
+.titulo-grid{
+    font-size: 100%;}
+
+.links{display: flex;
+flex-direction: column;}
+
+
+footer{width: 50%;};
+}
+
+
+/*tablet*/
+@media (min-width:481px) and (max-width:768px){
+.imagFlex{
+    flex-direction: row;}
+
+.contenedorGrid{
+grid-template-areas:
+"titulo titulo"
+"imagen1 texto1"
+"texto2 imagen2";
+
+grid-template-columns: 2fr;
+grid-template-rows: 250px;
+}
+
+.imagen1-grid{
+width: 50px;
+height: 40px;
+}
+
+.imagen2-grid{
+    width: 35px;
+    height: 45px;
+}
+
+.titulo-grid{
+font-size: 100%;}
+
+.links{display: flex;
+flex-direction: column;}
+
+
+footer{width: 50%;};
+}
+
+
+
+/*Pc*/
+@media (min-width:769px){}
+
+
+
+
+
+    /*GRID SKINCARE*/
+    .contenedorgrid-sc
+    
+    .card{
+        align-items: center;
+    }
+
+/*
+.contenedorgrid-sc img{
+    width:40%;
+    height: 40%;
+}
+
+.contenedorgrid-sc{    
+    display: grid;
+    grid-template-areas:
+    "titulo1"
+    "texto1"
+    "imagen1"
+    "titulo2"
+    "texto2"
+    "imagen2"
+    "titulo3"
+    "texto3"
+    "imagen3";
+
+ /*Cantidad y ancho de cada columna*/
+ grid-template-columns: 1  50%;
+ 
+    /*Cantidad y alto de cada fila*/
+ grid-template-rows: 150px 200px 300px 150px 200px 300px 150px 200px 300px;
+
+align-items: center;
+justify-content: center;}
+
+ .titulo1g{
+    grid-area: titulo1;}
+    
+ .imagen1g{
+    grid-area: imagen1;}
+
+ .texto1g{
+ grid-area: texto1;}
+
+ .titulo2g{
+    grid-area: titulo2;}
+    
+ .imagen2g{
+    grid-area: imagen2;}
+
+ .texto2g{
+ grid-area: texto2;}
+
+ .titulo3g{
+    grid-area: titulo3;}
+    
+ .imagen3g{
+    grid-area: imagen3;}
+
+ .texto3g{
+ grid-area: texto3;}
+
+
+
+
+
+
+main{text-align: center;}
+
+
+footer{border: solid salmon 10px;
+    padding: 20px 20px;
+    margin: 20px 100px;
+text-align: center;}
+
+/*mobile*/
+@media (max-width:480px){
+
+    .imagFlex{
+        flex-direction: column;}
+
+.contenedorgrid-sc{
+    grid-template-areas:
+   "titulo1"
+   "imagen1"
+   "titulo2"
+   "imagen2"
+   "titulo3"
+   "imagen3"
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 200px 70px 200px 70px 200px;
+}
+
+.texto1g{display: none;}
+
+.texto2g{display: none;}
+
+.texto3g{display: none;}
+
+.titulo-grid{
+    font-size: 100%;}
+
+.links{display: flex;
+flex-direction: column;}
+
+
+footer{width: 50%;};
+}
+
+
+
+
+/*tablet*/
+@media (min-width:481px) and (max-width:768px){
+.imagFlex{
+    flex-direction: row;}
+
+.contenedorgrid-sc {
+grid-template-areas:
+"titulo1 texto1 imagen1"
+"titulo2 texto2 imagen2"
+"titulo3 texto3 imagen3";
+
+grid-template-columns: 3fr;
+grid-template-rows: 100px 100px 100px;
+}
+
+
+.titulo-grid{
+font-size: 100%;}
+
+.links{display: flex;
+flex-direction: column;}
+
+
+footer{width: 50%;};
+}
+
+
+
+/*Pc*/
+@media (min-width:769px){
+  .imagen1g{width: 50px;
+height: 50px;}
+
+    .contenedorgrid-sc{
+        grid-template-areas:
+        "titulo1"
+        "texto1"
+        "imagen1"
+        "titulo2"
+        "texto2"
+        "imagen2"
+        "titulo3"
+        "texto3"
+        "imagen3";
+        
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 80px 500px 70px 80px 500px 70px 80px 500px;
+        }
+        
+        
+        .imagen1g{width: 40%;
+        height: 40%;}
+        
+        .titulo-grid{
+        font-size: 100%;}
+        
+        .links{display: flex;
+        flex-direction: column;}
+        
+        
+        footer{width: 50%;};
+    
+}*/
