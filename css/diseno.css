@@ -307,6 +307,7 @@ footer{border: solid salmon 10px;
 /*mobile*/
 @media (max-width:480px){
 
+
     .imagFlex{
         flex-direction: column;
     }
@@ -436,7 +437,7 @@ footer{border: solid salmon 10px;
 
             
         grid-template-columns: 1fr;
-        grid-template-rows: 70px 70px 70px 300px 70px 50px 180px 50px 180px 50px 180px 50px 180px 50px 180px;
+        grid-template-rows: 70px 70px 70px 300px 100px 50px 180px 50px 180px 50px 180px 50px 180px 50px 180px;
 
 
          .grid-text-mk1{
@@ -614,3 +615,8 @@ footer{border: solid salmon 10px;
     color: white;
     margin: 30px 70px;
 }   
+
+/*CONTACT*/
+.maps{
+    width: 80%;
+}
