@@ -417,6 +417,9 @@ footer{border: solid salmon 10px;
     
     
     .contenedor-grid-makeup {
+
+        margin:  2px;
+
         display: grid;
         grid-template-areas:
             "makeup"
@@ -470,7 +473,13 @@ footer{border: solid salmon 10px;
         .video{
             width: 80%;
             justify-self: center;
+        
         }
+        .lineamaq{
+            font-size: 15px;
+        }
+
+
     }
 }
     
