@@ -1,64 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabatha MakeUp</title>
-     <!-- css vinculacion link -->
-      <link rel="stylesheet" href="../css/diseno.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+  <title>Tabatha MakeUp</title>
+  <!-- ANIMATE -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+
+  
+  <!-- css vinculacion link -->
+  <link rel="stylesheet" href="../css/diseno.css">
 </head>
 <body>
-    <header>
-    <a href="../index.html"><img src="../medios/logo.png" alt="" class="logo"></a>
- 
+  <header>
+    <div class="logos">
+       <a href="../index.html"><img src="../medios/logo.png" alt="" class="logo"></a>
+     </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+       <a class="navbar-brand" href="#">MakeUp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="Home">
+              <a href="../index.html" class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="SkinCare">
+              <a href="./skinCare.html" class="nav-link active" href="#">Skin Care</a>
+            </li>
+            <li class="Perfumes">
+              <a href="./perfumes.html" class="nav-link active" href="#">Perfumes</a>
+            </li>
+            <li class="GiftCard">
+              <a href="./giftCard.html" class="nav-link active" aria-current="page" href="#">GiftCard</a>
+            </li>
+            <li class="Contact">
+              <a href="./contact.html" class="nav-link active" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+   
+  <main>
+    <section class="contenedor-grid-makeup">
+      <h1 class="animate__animated animate__heartBeat makeup">Make Up</h1>
 
-    <nav>
-        <ul class="links">
-            <li><a href="../index.html"> Home </a></li>
-            <li> <a href="#"> MakeUp</a></li>
-       <li> <a href="./skinCare.html"> SkinCare</a></li>
-       <li><a href="./perfumes.html"> Perfumes</a></li>
-       <li><a href="./giftCard.html"> GiftCard</a></li>
-       <li><a href="./contact.html"> Contact</a></li>
-    
-        </ul>
-    </nav> 
 
-    <main>
-    <h1>Make Up</h1>
+      <h2 class="principal">Make up Secret</h2>
+      <p class="texto-make">Te eseñamos como delinearte de manera rapida y facil.</p>
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/FBUTEZl9kWs?si=58Ff9FXwi-5ABEq-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <h2 class="lineamaq grid-titulom">Linea de Maquillaje</h2>
+      <p class="grid-text-mk1">Te presentamos nuestra linea de maquillaje, todo lo que necesitas para esos looks de dia y noche que tanto anhelas!</p>
 
 
-<h2>Make up Secret</h2>
-<p>Te eseñamos como delinearte de manera rapida y facil.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FBUTEZl9kWs?si=58Ff9FXwi-5ABEq-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3 class="grid-bases">Bases</h3>
+      <p class="grid-text-mk2">Tenemos dos tonos de base, tono claro y tono medio, podes mezclar las dos hasta llegar a tu tono ideal! Siempre se van adaptando al tono de la piel</p>
+      <img data-aos="flip-right" class="grid-imagenb" src="../medios/base.jpg" alt="imagenes de bases de maquillaje">
 
-<h2>Linea de Maquillaje</h2>
-<p>Te presentamos nuestra linea de maquillaje, todo lo que necesitas para esos looks de dia y noche que tanto anhelas!</p>
+      <h3 class="grid-deli">Delineador</h3>
+      <p class="grid-text-mk3">Sin un buen delineador es imposible tener un maquillaje increible, por eso diseñamos este producto para vos, preciso, intenso y de facil uso!</p>
+      <img data-aos="flip-right" class="grid-imagend" src="../medios/delineador.jpg" alt="imagen de delineador liquido">
+
+      <h3 class="grid-labial">Labiales</h3>
+      <p class="grid-text-mk4">Como definir tu look? Con un labial, claro, medio o intenso, estos son nuestros tres labiales, Derek, Bloom y Caramel. Probalos y nos contas cual es tu preferido!</p>
+      <img data-aos="flip-right" class="grid-imagenl" src="../medios/labial.jpg" alt="imagen de 3 labaiales">
+
+      <h3 class="grid-lip">LipOil y Gloss</h3>
+      <p class="grid-text-mk5">Toque final para los labios, y no puede faltar el LipOil y Gloss, con un olorcito increible, dulce y no pegajoso!</p>
+      <img data-aos="flip-right" class="grid-imagenlip" src="../medios/lipoil.jpg" alt="imagen de lipoil y gloss">
+
+      <h3 class="grid-glow">GlowUp</h3>
+      <p class="grid-text-mk6">Acabado final para tu maquillaje, obviamente con un brillo unico... Y si, a quien no le gustan los brillos? Tenemos tonos dorados o rosas, vos elegis cual preferis!!!</p>
+      <img data-aos="flip-right" class="grid-imagenglow" src="../medios/glowup.jpg" alt="imagen de glowup">
+    </section>
+  </main>
 
 
-<h3>Bases</h3>
-<p>Tenemos dos tonos de base, tono claro y tono medio, podes mezclar las dos hasta llegar a tu tono ideal! Siempre se van adaptando al tono de la piel</p>
-<img src="../medios/base.jpg" alt="imagenes de bases de maquillaje">
+  <footer> 
+    <p> Gracias por tu visita! Encontranos en instagram como @Tabatha.makeup </p>
+  </footer>
 
-<h3>Delineador</h3>
-<p>Sin un buen delineador es imposible tener un maquillaje increible, por eso diseñamos este producto para vos, preciso, intenso y de facil uso!</p>
-<img src="../medios/delineador.jpg" alt="imagen de delineador liquido">
+  <!-- AOS -->
+  <script>
+    AOS.init();
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
-<h3>Labiales</h3>
-<p>Como definir tu look? Con un labial, claro, medio o intenso, estos son nuestros tres labiales, Derek, Bloom y Caramel. Probalos y nos contas cual es tu preferido!</p>
-<img src="../medios/labial.jpg" alt="imagen de 3 labaiales">
-
-<h3>LipOil y Gloss</h3>
-<p>Toque final para los labios, y no puede faltar el LipOil y Gloss, con un olorcito increible, dulce y no pegajoso!</p>
-<img src="../medios/lipoil.jpg" alt="imagen de lipoil y gloss">
-
-<h3>GlowUp</h3>
-<p>Acabado final para tu maquillaje, obviamente con un brillo unico... Y si, a quien no le gustan los brillos? Tenemos tonos dorados o rosas, vos elegis cual preferis!!!</p>
-<img src="../medios/glowup.jpg" alt="imagen de glowup">
-</main>
-</header>
-<footer> 
-    
-    Gracias por tu visita! Encontranos en instagram como @Tabatha.makeup </footer>
 </body>
 </html>

@@ -6,94 +6,123 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
     <title>Tabatha GiftCard</title>
-     <!-- css vinculacion link -->
-     <link rel="stylesheet" href="../css/diseno.css">
+    <!-- ANIMATE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+
+  
+    <!-- css vinculacion link -->
+    <link rel="stylesheet" href="../css/diseno.css">
 </head>
 <body>
-    <header>
-    <a href="../index.html"><img src="../medios/logo.png" alt="" class="logo"></a>
-    <nav>
-        <ul class="links">
-            <li><a href="../index.html"> Home </a></li>
-            <li> <a href="./makeUp.html"> MakeUp</a></li>
-       <li> <a href="./skinCare.html"> SkinCare</a></li>
-       <li><a href="./perfumes.html"> Perfumes</a></li>
-       <li><a href="#"> GiftCard</a></li>
-       <li><a href="./contact.html"> Contact</a></li>
-
-        </ul>
-    </nav>
-    <main>
-    <h1>Gift Card</h1>
-<p>
-    ¿Queres hacer un regalo especial? Estas en el sitio indicado!!</p>
-
-    <img src="../medios/gift.jpg" alt="imagen de pacagging">
-
-<h2 class="bg-danger text-white m-4">Completá el siguiente formulario para poder gestionar la Gift Card con los datos de quien recibira el regalo!</h2>
-<!-- FORMULARIO GIFT CARD
-<section>
-    
-    <form action=""></form>
-    <label for="Nombre">Nombre</label>
-  <input type="text" name="Nombre" id="Nombre">
-  <label for="Apellido">Apellido</label>
-  <input type="text" name="Apellido" id="Apellido">
-  <label for="Telefono">Telefono</label>
-  <input type="number" name="Numero de Telefono" id="">
-  <label for="Email">Email</label>
-  <input type="email" name="Email" id="">
-  <label for="Importe en pesos">Importe en pesos</label>
-  <input type="number" name="" id="pesos">
-  <label for="Quien regala">Nombre de quien regala</label>
-  <input type="number" name="" id="regala">
-  <div class="d-grid gap-2 m-4">
-  <button class="btn btn-danger btn-lg">Generar Gift Card</button>
-  </div>
-</section>
- -->
-
-<section>
-    <form>
-        <div class="mb-3">
-          <label for="Nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="mb-3">
-          <label for="Apellido" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3">
-            <label for="e-mail" class="form-label">E-mail</label>
-            <input type="emails" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3">
-            <label for="Telefono" class="form-label">Telefono</label>
-            <input type="number" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3">
-            <label for="Importe" class="form-label">Importe de la Gift Card en pesos</label>
-            <input type="number" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3">
-            <label for="Quien" class="form-label">Nombre de quien regala</label>
-            <input type="text" class="form-control" id="exampleInputPassword1">
-          </div>
-
-        <div id="cheack" class="form-text">Chequea que todos los datos esten ingresados correctamente antes de generar tu gift card.</div>
+  <header>
+    <div class="logos">
+      <a href="../index.html"><img src="../medios/logo.png" alt="" class="logo"></a>
     </div>
-    <div class="d-grid gap-2 m-4">
-        <button class="btn btn-danger btn-lg">Generar Gift Card</button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Gift Card</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="Home">
+              <a href="../index.html" class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="MakeUp">
+              <a href="./makeUp.html" class="nav-link active" aria-current="page" href="#">MakeUp</a>
+            </li>
+            <li class="SkinCare">
+              <a href="./skinCare.html" class="nav-link active" href="#">Skin Care</a>
+            </li>
+            <li class="Perfumes">
+              <a href="./perfumes.html" class="nav-link active" href="#">Perfumes</a>
+            </li>
+            <li class="Contact">
+              <a href="./contact.html" class="nav-link active" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-      </form>
-</section>
+      </div>
+    </nav>
+    
+  
+  </header>
 
-</main>
-</header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         <h1 class="animate__animated animate__heartBeat">Gift Card</h1>
+         <p>¿Queres hacer un regalo especial? Estas en el sitio indicado!!</p>
+        </div>
+
+         <img class="img.giftcard col-6 mx-auto animate__animated animate__slideInUp" src="../medios/gift.jpg" alt="imagen de pacagging">
+         <h2 class="bg-danger text-white m-4 col-10 mx-auto">Completá el siguiente formulario para poder gestionar la Gift Card con los datos de quien recibira el regalo!</h2>
+     
+        <section>
+          <form>
+              <div class="mb-3 col-8 mx-auto">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>  
+              <div class="mb-3 col-8 mx-auto">
+                <label for="Apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3 col-8 mx-auto">
+                <label for="e-mail" class="form-label">E-mail</label>
+                <input type="emails" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3 col-8 mx-auto">
+              <label for="Telefono" class="form-label">Telefono</label>
+              <input type="number" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3 col-8 mx-auto">
+                <label for="Importe" class="form-label">Importe de la Gift Card en pesos</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3 col-8 mx-auto">
+                <label for="Quien" class="form-label">Nombre de quien regala</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+
+            <div id="cheack" class="form-text">
+              <p>Chequea que todos los datos esten ingresados correctamente antes de generar tu gift card.</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-danger btn-lg">Generar Gift Card</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
 
 
 
-<footer>Gracias por tu visita! Encontranos en instagram como @Tabatha.makeup </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <footer>
+    <p> Gracias por tu visita! Encontranos en instagram como @Tabatha.makeup </p>
+  </footer>
+
+  <!-- AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
