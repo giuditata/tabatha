@@ -437,7 +437,7 @@ footer{border: solid salmon 10px;
 
             
         grid-template-columns: 1fr;
-        grid-template-rows: 70px 70px 70px 300px 100px 50px 180px 50px 180px 50px 180px 50px 180px 50px 180px;
+        grid-template-rows: 70px 70px 70px 300px 150px 50px 180px 50px 180px 50px 180px 50px 180px 50px 180px;
 
 
          .grid-text-mk1{
